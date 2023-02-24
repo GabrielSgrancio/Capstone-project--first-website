@@ -1,38 +1,131 @@
-html {scroll-behavior: smooth;}
 
-section{
-  height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Gloock&family=Yanone+Kaffeesatz:wght@200&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
 }
-.blue {background-color:blue;}
-.red {background-color:red;}
-.green {background-color:green;}
-
-header,
-footer {
-  color:white;
-  text-align:center;
-  height:100px;
-  font-size:3rem;
+.title {
+  margin-top: 230px;
+  margin-left: 0;
 }
 
-header {
+
+h3 {
+  color:whitesmoke;
+  font-size: 5rem;
+  font-family: 'DM Serif Display', serif;
+  margin-left: 10px;
+}
+h1 {
+  font-size:8rem;
+  font-family: 'DM Serif Display', serif;
+  word-spacing: 0.2rem;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  background-color: rgb(101, 100, 110);
+  height: 80px;
+  z-index: 1;
   position:sticky;
   top:0;
-}
-
-footer {
-  background-color: black;
-  position:sticky;
-  bottom: 0;
+  width: 100%;
+  align-items: center;
+  border-bottom: 2px solid black;
+  z-index: 10;
 
 }
 
-.social {
-  background-color:darkred;
-  color:whitesmoke;
-  font-size:inherit;
-  padding: 1rem;
-  position:fixed;
-  top:30%;
-  left:50%
+
+.container{
+  border: 1px solid rgb(0, 0, 0);
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  margin: 0 180px 0 180px;
+  z-index: 5;
+  height: 500vh;
+  position: relative;
+
+}
+
+ .background {
+  position: absolute;
+  top: 78px;
+  object-fit: cover;
+  width: 100%;
+  left: 0;
+  filter:blur(0.5px);
+  z-index: 1;
+  border-bottom: 2px solid black;
+}
+
+  .title {
+  position:absolute;
+  z-index: 8;
+}
+
+.button img {
+  position:absolute;
+  display: flex;
+  right: 50%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 80px;
+  width: 80px;
+  top:580px;
+  z-index: 3;
+
+}
+
+body {
+  background-color:  #DDDDDD ;
+  position: relative;
+}
+
+
+.interests {
+  position: absolute;
+
+}
+
+.interests .title-2 {
+  font-size: 4rem;
+  width: 100%;
+  margin-left: 80%;
+  margin-bottom: 70px;
+  font-family: 'DM Serif Display', serif ;
+}
+
+.image {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto;
+  object-fit: cover;
+  -ms-grid-column-span: 50px;
+  height: 700px;
+  /* width: 100%; */
+  top: 1000px;
+  z-index: -1;
+  /* margin-bottom: 180px; */
+  border: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.sub-title {
+  margin-left: 105%;
+  width: 100%;
+  margin-bottom: 930px;
+  font-family: 'DM Serif Display', serif ;
+  font-size: 3rem;
 }
